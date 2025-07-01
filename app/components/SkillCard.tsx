@@ -1,5 +1,5 @@
 // app/components/SkillCard.tsx
-"use client";
+
 
 
 import Image from 'next/image';
