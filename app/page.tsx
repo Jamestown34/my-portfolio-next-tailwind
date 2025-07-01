@@ -1,4 +1,5 @@
-// app/page.tsx
+export const dynamic = 'force-dynamic';
+
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Profile from './components/Profile';
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-[17vh] md:pt-[17vh]"> {/* Adjust padding-top to account for fixed navbar height */}
+      <main className="pt-[17vh] md:pt-[17vh]">
         <Profile />
         <About />
         <Experience />
