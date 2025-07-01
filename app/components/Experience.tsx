@@ -5,13 +5,14 @@ import SkillCard from './SkillCard';
 export default function Experience() {
   return (
     <section id="experience" className="relative py-16 px-8 md:px-20">
+      {/* `p1` is intentionally left empty to match original HTML */}
       <SectionHeader
-        p1="" {/* Your original HTML had this empty, keeping it consistent */}
+        p1=""
         title="SkillSet"
         description="I have a well-rounded skill set in data analytics, covering programming, databases, BI tools, and spreadsheets. Through hands-on projects and certifications, I have continuously refined my expertise. Below is a glimpse of my capabilities."
       />
       <div className="experience-details-container flex flex-col justify-center items-center">
-        <div className="about-containers grid grid-cols-1 md:grid-cols-2 gap-8 my-8 w-full max-w-4xl"> {/* Adjusted grid for responsiveness */}
+        <div className="about-containers grid grid-cols-1 md:grid-cols-2 gap-8 my-8 w-full max-w-4xl">
 
           {/* Programming */}
           <div className="details-container bg-bg-body rounded-3xl border border-accent p-6 text-center">
