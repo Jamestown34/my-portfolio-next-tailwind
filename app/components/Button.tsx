@@ -1,4 +1,7 @@
 // app/components/Button.tsx
+
+"use client";
+
 import Link from 'next/link';
 import React from 'react'; // Import React for React.ReactNode
 
