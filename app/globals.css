@@ -1,0 +1,54 @@
+/* app/globals.css */
+
+/* Google Fonts Import - Use @next/font/google for better performance in Next.js */
+/* You will configure this in app/layout.tsx instead of here for optimal setup */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables (from your original CSS) */
+:root {
+  --bg-body: #FFFFFF;
+  --bg-body2: #F9F9F9;
+  --text1: #333333;
+  --text2: #555555;
+  --accent: #4b6cc1;
+  --accent-light: #5d7dd6;
+  --accent-dark: #3a5aa6;
+  --primary: #4b6cc1;
+  --primary-dark: #3a5aa6;
+  --secondary: #333333;
+  --secondary-dark: #222222;
+  --white: #FFFFFF;
+  /* --fs-18: 18px; Handled by Tailwind config now */
+}
+
+/* Base Styles & Resets (Keep only what Tailwind's preflight doesn't cover or you truly need globally) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Font family will be applied via app/layout.tsx using next/font */
+  /* background-color and text color are best applied using Tailwind classes on relevant components/layout */
+  line-height: 1.56; /* Default line height for text */
+}
+
+/* Icon size general utility - you can apply this class directly */
+.icon {
+  @apply cursor-pointer h-8; /* h-8 equals 2rem or 32px */
+}
+
+/* Project Images */
+.project-img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover; /* Ensure images cover their container */
+}
